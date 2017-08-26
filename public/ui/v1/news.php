@@ -8,7 +8,7 @@ echo <<<EOT
 <!--
 EOT;
 foreach($news_list as $key=>$val){
-$val['imghtml']     = $lang_met_module2_type==3?"<img src=\"{$thumb_src}dir={$val[imgurl]}&x={$met_newsimg_x}&y={$met_newsimg_y}\" />":'';
+$val['imghtml']     = $lang_met_module2_type==3?"<img src=\"{$thumb_src}dir={$val[imgurl]}&x=90&y=90\" />":'';
 $val['i']           = $lang_met_module2_type==1?'<i class="fa fa-caret-right"></i>':'';
 $val['description'] = $lang_met_module2_type >1?'<p>'.utf8substr($val['description'],0,200).'</p>':'';
 echo <<<EOT

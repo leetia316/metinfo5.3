@@ -74,12 +74,9 @@ define ('HTTP_HOST', $_SERVER['HTTP_HOST']);
 //来源页面
 define('HTTP_REFERER', $_SERVER['HTTP_REFERER']);
 //脚本路径
-$_SERVER['PHP_SELF'] = htmlentities($_SERVER['PHP_SELF']);
+$phpfile = basename(__FILE__);
+$_SERVER['PHP_SELF']=htmlentities($_SERVER['PHP_SELF']);
 define ('PHP_SELF', $_SERVER['PHP_SELF']=="" ? $_SERVER['SCRIPT_NAME'] : $_SERVER['PHP_SELF']);
-if (preg_match('/[<>"\'\(\);, ]+/', PHP_SELF)) {
-	echo 'PHP_SELF ERROR';
-	die();
-}
 
 if (!preg_match('/^[A-Za-z0-9_]+$/', M_TYPE.M_NAME.M_MODULE.M_CLASS.M_ACTION)) {
 	echo 'Constants must be numbers or letters or underlined';

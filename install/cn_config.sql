@@ -48,7 +48,7 @@ INSERT INTO met_config VALUES('108','metconfig_imgs_y','150','','0','0','cn');
 INSERT INTO met_config VALUES('109','metconfig_keywords','网站关键词','','0','0','cn');
 INSERT INTO met_config VALUES('110','metconfig_description','网站描述，一般显示在搜索引擎搜索结果中的描述文字，用于介绍网站，吸引浏览者点击。','','0','0','cn');
 INSERT INTO met_config VALUES('111','metconfig_title_type','2','','0','0','cn');
-INSERT INTO met_config VALUES('112','metconfig_seo','<p>营销-SEO-头部优化文字</p>','','0','0','cn');
+INSERT INTO met_config VALUES('112','metconfig_seo','<p>后台-营销-SEO-头部优化文字处修改</p>','','0','0','cn');
 INSERT INTO met_config VALUES('113','metconfig_tools_ok','1','','0','0','cn');
 INSERT INTO met_config VALUES('114','metconfig_alt','图片关键词','','0','0','cn');
 INSERT INTO met_config VALUES('115','metconfig_atitle','链接关键词','','0','0','cn');

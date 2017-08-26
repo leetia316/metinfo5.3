@@ -44,7 +44,7 @@ define(function(require, exports, module) {
 				$("#showproduct .met_nav").append("<i class='am-icon-forward'></i>");
 			}
 			var IScroll = $.AMUI.iScroll;
-			var myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true,click: true});
+			var myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true });
 			$("#showproduct .met_nav").css("visibility","visible");
 			common.metHeight($("#showproduct .met_related_list li h2"));
 		}

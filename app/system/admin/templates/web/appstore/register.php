@@ -24,7 +24,7 @@ var ownlangtxt = '';
 				<div class="fbox">
 					<input type="text" name="user_id" data-required="1" value="" placeholder="{$_M['word']['Prompt_user']}" data-ajaxcheck-url="{$_M['url']['own_form']}&a=doverifica">
 				</div>
-				<span class="lsbwarning">可用官网或交流论坛账号直接登录</span>
+				<span class="tips">{$_M['word']['usernametips']}</span>
 			</dd>
 		</dl>
 		<dl>
@@ -49,7 +49,7 @@ var ownlangtxt = '';
 			<dt>{$_M['word']['memberCell']}</dt>
 			<dd class="ftype_input">
 				<div class="fbox">
-					<input type="text" name="user_mobile" data-mobile="1" value="{$adm['admin_mobile']}" placeholder="{$_M['word']['Prompt_mobile']}">
+					<input type="text" name="user_mobile" data-mobile="1" value="{$adm['admin_mobile']}" placeholder="{$_M['word']['Prompt_mobile']}" data-ajaxcheck-url="{$_M['url']['own_form']}&a=doverifica">
 				</div>
 				<span class="tips">{$_M['word']['services_future']}</span>
 			</dd>
@@ -58,7 +58,7 @@ var ownlangtxt = '';
 			<dt>{$_M['word']['mailbox']}</dt>
 			<dd class="ftype_input">
 				<div class="fbox">
-					<input type="text" name="user_email" data-email="1" value="{$adm['admin_email']}" placeholder="{$_M['word']['Prompt_email']}">
+					<input type="text" name="user_email" data-email="1" value="{$adm['admin_email']}" placeholder="{$_M['word']['Prompt_email']}" data-ajaxcheck-url="{$_M['url']['own_form']}&a=doverifica">
 				</div>
 				<span class="tips">{$_M['word']['services_future']}</span>
 			</dd>
@@ -87,9 +87,6 @@ var ownlangtxt = '';
 			<dt> </dt>
 			<dd>
 				<input type="submit" name="submit" value="{$_M['word']['registration']}" class="submit">
-				<span>
-				<a href="{$_M['url']['own_form']}c=member&a=dologin" class="lsblogin submit ">返回登录</a>
-				<span>
 			</dd>
 		</dl>
 	</div>

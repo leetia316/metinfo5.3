@@ -38,12 +38,6 @@ class myapp extends admin {
     public function dodelapp() {
         global $_M;
         $no = $_M['form']['no'];
-		 $query = "SELECT m_name FROM met_applist WHERE no='{$no}'";
-             $data= DB::get_one($query); 
-             $m_name= $data['m_name'];
-          $filenameurl=PATH_WEB.'app/app/'.$m_name;
-        $filename=str_replace("/","\\",$filenameurl);
-              if(is_dir($filename)){
         $getapp = load::mod_class('myapp/class/getapp', 'new');
         $app = $getapp->get_oneapp($no);
         if ($app['m_class']) {
@@ -61,12 +55,7 @@ class myapp extends admin {
 				header('location:'.$_M['url']['site_admin'].'app/dlapp/delapp.php?lang='.$_M['lang'].'&id='.$app_old['id'].'&action=del');
             }
         }
-		   }else{
-                 
-               $query = "DELETE FROM {$_M['table']['applist']} WHERE no=$no";
-                DB::query($query); 
-                 header('location:'.$_M['url']['site_admin'].'app/dlapp/delapp.php?lang='.$_M['lang'].'&id='.$app_old['id'].'&action=del');
-		  }
+
     }
 
 

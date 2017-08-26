@@ -11,9 +11,10 @@ a{ color:#8d8d8d; text-decoration:none }
 .editor ul,.editor ol{ padding-left:28px;}
 .editor ul li{ list-style-type:disc; margin-bottom:3px; }
 .editor ol li{ list-style-type:decimal; margin-bottom:3px; }
-.editor img{max-width: 100% !important; max-height:100%;height: auto;}
+.editor img{ max-height:100%;
+    max-width: 100% !important;}
 .editor .metvideobox{ text-align:center; margin:10px auto; }
-.editor .video-js,.editor iframe{ max-width:100% !important;height: auto;}
+.editor .video-js{ max-width:100%; }
 /*分页*/
 #flip{ text-align:center; height:50px; line-height:50px;}
 
@@ -48,7 +49,6 @@ a{ color:#8d8d8d; text-decoration:none }
 #showproduct .pshow{ position:relative; width:100%; overflow:hidden; font-size:0px; text-align:center;}
 #showproduct .pshow li img{ height:auto!important; width:100%; }
 #showproduct .pshow li p{  text-align:left; min-height:7px; font-size:12px; }
-#showproduct .pshow img{max-width: 100% !important;height: auto !important;}
 #showproduct .paralist{ padding:0px 10px;}
 #showproduct .paralist li{ display:-webkit-box; padding:8px 0px; border-bottom:1px solid #eee; }
 #showproduct .paralist li a{ color:#08c; }

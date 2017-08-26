@@ -246,12 +246,8 @@ class sys_product extends module {
 			$list['links'] = url_standard($list['links']);
 		}
 		if(!$list['description'])$list['description'] = $this->description($list['content']);
-		    $titlenum =substr_count($list['title'],"\'");
-		    if(!$titlenum){
-		       $list['title']=str_replace("'", "\'",$list['title']);
-              $list['description']=str_replace("'", "\'",$list['description']);
-		    }
-		   
+		
+		
 		
 		
 		$query = "INSERT INTO {$this->tablename} SET

@@ -94,7 +94,6 @@ if($dataoptimize[$pagemark]['nextlist']){
 			}
 		}
 	}
-	
 	$time=date("Y-m-d H:i:s",time());
 	if(!is_array($prenews))$prenews=$db->get_one("select * from $dbname where $csql and lang='$lang' and (recycle='0' or recycle='-1') and displaytype='1' and addtime<'{$time}' and $acc_sql $pn_sql[0] limit 0,1");
 	if(!is_array($nextnews))$nextnews=$db->get_one("select * from $dbname where $csql and lang='$lang' and (recycle='0' or recycle='-1') and displaytype='1' and addtime<'{$time}' and $acc_sql $pn_sql[1] limit 0,1");

@@ -48,7 +48,7 @@ INSERT INTO met_config VALUES('738','metconfig_imgs_y','150','','0','0','tc');
 INSERT INTO met_config VALUES('739','metconfig_keywords','網站關鍵詞','','0','0','tc');
 INSERT INTO met_config VALUES('740','metconfig_description','網站描述，壹般顯示在搜索引擎搜索結果中的描述文字，用於介紹網站，吸引瀏覽者點擊。','','0','0','tc');
 INSERT INTO met_config VALUES('741','metconfig_title_type','2','','0','0','tc');
-INSERT INTO met_config VALUES('742','metconfig_seo','<p>營銷-SEO-頭部優化文字</p>','','0','0','tc');
+INSERT INTO met_config VALUES('742','metconfig_seo','<p>後臺-營銷-SEO-頭部優化文字處修改</p>','','0','0','tc');
 INSERT INTO met_config VALUES('743','metconfig_tools_ok','1','','0','0','tc');
 INSERT INTO met_config VALUES('744','metconfig_alt','圖片關鍵詞','','0','0','tc');
 INSERT INTO met_config VALUES('745','metconfig_atitle','鏈接關鍵詞','','0','0','tc');

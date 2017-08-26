@@ -164,6 +164,7 @@ input.ui-input::-webkit-input-placeholder{
 
 /*区块内容*/
 .v52fmbx{ margin:8px 0px 0px; border:1px solid #ddd; border-top:0; overflow:hidden; text-align:left;}
+.product_index{overflow:visible!important;}
 .v52fmbx dl:after{display:block;clear:both;content:"";visibility:hidden;height:0;}
 .v52fmbx dl{ width:100%; zoom:1;  background:#fff;}
 .v52fmbx dl{ border-top:1px solid #ddd; margin:0px 0px; display:-webkit-box; display:-moz-box; display:box; display:-ms-flexbox; position:relative; padding:5px 0px; }
